@@ -1,6 +1,16 @@
 # Maven oss parent
 Maven oss parent pom helps open source projects to deploy and release Maven repositories to maven central (https://central.sonatype.org)
 Since the official support is from   [oss-parent](https://central.sonatype.org/pages/apache-maven.html#deprecated-oss-parent) is deprecated.
+This pom creates a release profile which will:
+* compile
+* generate test report (jacoco)
+* generate sources
+* generate javadocs
+* generate gpg signed files
+* tag project version
+* upload to sonatype nexus
+* ddeploy to sonatype nexus
+* release to sonatype nexus
 
 [![License][License-Image]][License-Url]
 [![Version][Version-image]][Version-Url]
@@ -10,15 +20,6 @@ Since the official support is from   [oss-parent](https://central.sonatype.org/p
 * Call `mvn clean deploy -P release` after setup the parent to deploy and release your project to maven central
 * The repository will be uploaded, deployed,  released and central sync activated on [Sonatype Nexus](https://oss.sonatype.org/)
 * The repository will be published to [Maven Central](https://search.maven.org), typically within 10 minutes, though updates to [Maven Central](https://search.maven.org) can take up to two hours.
-
-##### Parent setup
-```
- <parent>
-     <groupId>berlin.yuna</groupId>
-     <artifactId>ossrh-parent</artifactId>
-     <version>0.0.1</version>
- </parent>
-```
 
 ### General setup
 ##### Project requirements
@@ -59,6 +60,14 @@ Since the official support is from   [oss-parent](https://central.sonatype.org/p
 ```
 
 ##### POM requirements [Example pom](https://github.com/YunaBraska/EmbeddedNatsServer/blob/master/pom.xml)
+* POM setup parent
+```xml
+ <parent>
+     <groupId>berlin.yuna</groupId>
+     <artifactId>ossrh-parent</artifactId>
+     <version>0.0.1</version>
+ </parent>
+```
 * POM Project \<name\>, \<description\>, \<url\>, <developers> tag -like:
 ```xml
     <name>${project.artifactId}</name>
