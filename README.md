@@ -28,6 +28,7 @@ This pom creates a release profile which will:
 * LICENSE file in root folder (_like [LICENSE](https://github.com/YunaBraska/maven-oss-parent/blob/master/LICENSE)_)
 * README.md file in root folder (_like [README.md](https://github.com/YunaBraska/maven-oss-parent/blob/master/README.md)_)
 * Account on [Sonatype Jira](https://issues.sonatype.org)
+* Create Issue on [Sonatype Jira](https://issues.sonatype.org)
 * gpg installed and setup - like: [gpg simple docu](https://wiki.ubuntuusers.de/GnuPG/)
 ```bash
 	gpg --gen-key
@@ -64,7 +65,7 @@ This pom creates a release profile which will:
 ```xml
  <parent>
      <groupId>berlin.yuna</groupId>
-     <artifactId>ossrh-parent</artifactId>
+     <artifactId>maven-oss-parent</artifactId>
      <version>0.0.1</version>
  </parent>
 ```
@@ -113,7 +114,7 @@ This pom creates a release profile which will:
 [License-Url]: https://www.apache.org/licenses/LICENSE-2.0
 [License-Image]: https://img.shields.io/badge/License-Apache2-blue.svg
 [github-release]: https://github.com/YunaBraska/EmbeddedNatsServer
-[Build-Status-Url]: https://travis-ci.org/YunaBraska/ossrh-parent
-[Build-Status-Image]: https://travis-ci.org/YunaBraska/ossrh-parent.svg?branch=master
-[Version-url]: https://github.com/YunaBraska/ossrh-parent
-[Version-image]: https://badge.fury.io/gh/YunaBraska%2Fossrh-parent.svg
+[Build-Status-Url]: https://travis-ci.org/YunaBraska/maven-oss-parent
+[Build-Status-Image]: https://travis-ci.org/YunaBraska/maven-oss-parent.svg?branch=master
+[Version-url]: https://github.com/YunaBraska/maven-oss-parent
+[Version-image]: https://badge.fury.io/gh/YunaBraska%2Fmaven-oss-parent.svg
