@@ -1,20 +1,22 @@
 # Maven oss parent
+[![License][License-Image]][License-Url]
+[![Version][Version-image]][Version-Url]
+[![Build][Build-Status-Image]][Build-Status-Url] 
+
+### Description
 Maven oss parent pom helps open source projects to deploy and release Maven repositories to maven central (https://central.sonatype.org)
 Since the official support is from   [oss-parent](https://central.sonatype.org/pages/apache-maven.html#deprecated-oss-parent) is deprecated.
 This pom creates a release profile which will:
-* compile
-* generate test report (jacoco)
+* compile (optional - default=on)
+* find duplicate imports (optional - default=on)
+* generate test report (jacoco - optional - default=on)
 * generate sources
 * generate javadocs
 * generate gpg signed files
 * tag project version
 * upload to sonatype nexus
-* ddeploy to sonatype nexus
+* deploy to sonatype nexus
 * release to sonatype nexus
-
-[![License][License-Image]][License-Url]
-[![Version][Version-image]][Version-Url]
-[![Build][Build-Status-Image]][Build-Status-Url] 
 
 ### Usage
 * Call `mvn clean deploy -P release` after setup the parent to deploy and release your project to maven central
