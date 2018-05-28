@@ -11,7 +11,7 @@
 
     <name>${project.artifactId}</name>
     <description>Maven oss parent pom helps open source projects to deploy and release Maven repositories to maven central (https://central.sonatype.org)</description>
-    <url>https://github.com/YunaBraska/maven-oss-parent</url>
+    <url>${git-project.url}</url>
 
     <developers>
         <developer>
@@ -32,6 +32,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <git-project.url>https://github.com/YunaBraska/maven-oss-parent</git-project.url>
     </properties>
 
     <build>
@@ -221,4 +222,10 @@
             </distributionManagement>
         </profile>
     </profiles>
+
+    <scm>
+        <connection>scm:git:${git-project.url}</connection>
+        <developerConnection>scm:git:${git-project.url}</developerConnection>
+        <url>${git-project.url}.git</url>
+    </scm>
 </project>
