@@ -112,8 +112,6 @@ This pom creates a release profile which will:
 ```
 
 ### TODOs:
-* Deploy on maven central - should be simple :D
-* Testing with real project after deployment of this
 * Create a maven plugin out of this knowledge
 
 ![maven-oss-parent](banner.png "maven-oss-parent")
