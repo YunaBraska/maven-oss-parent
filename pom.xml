@@ -6,7 +6,7 @@
 
     <groupId>berlin.yuna</groupId>
     <artifactId>maven-oss-parent</artifactId>
-    <version>0.0.1</version>
+    <version>0.1.0</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
@@ -29,9 +29,9 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <parent-project.encoding>UTF-8</parent-project.encoding>
+        <project.build.sourceEncoding>${parent-project.encoding}</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>${parent-project.encoding}</project.reporting.outputEncoding>
         <git-parent-project.url>https://github.com/YunaBraska/maven-oss-parent</git-parent-project.url>
     </properties>
 
