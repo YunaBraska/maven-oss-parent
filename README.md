@@ -62,7 +62,7 @@ This pom creates a release profile which will:
 </settings>
 ```
 
-##### POM requirements [Example pom](https://github.com/YunaBraska/EmbeddedNatsServer/blob/master/pom.xml)
+##### POM requirements [Example pom](https://github.com/YunaBraska/nats-streaming-server-embedded/blob/master/pom.xml)
 * POM setup parent
 ```xml
  <parent>
@@ -120,7 +120,7 @@ This pom creates a release profile which will:
 
 [License-Url]: https://www.apache.org/licenses/LICENSE-2.0
 [License-Image]: https://img.shields.io/badge/License-Apache2-blue.svg
-[github-release]: https://github.com/YunaBraska/EmbeddedNatsServer
+[github-release]: https://github.com/YunaBraska/maven-oss-parent
 [Build-Status-Url]: https://travis-ci.org/YunaBraska/maven-oss-parent
 [Build-Status-Image]: https://travis-ci.org/YunaBraska/maven-oss-parent.svg?branch=master
 [Version-url]: https://github.com/YunaBraska/maven-oss-parent
