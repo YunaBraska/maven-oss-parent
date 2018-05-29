@@ -23,6 +23,7 @@ This pom creates a release profile which will:
 * Call `mvn clean deploy -P release` after setup the parent to deploy and release your project to maven central
 * The repository will be uploaded, deployed,  released and central sync activated on [Sonatype Nexus](https://oss.sonatype.org/)
 * The repository will be published to [Maven Central](https://search.maven.org), typically within 10 minutes, though updates to [Maven Central](https://search.maven.org) can take up to two hours.
+* There is no formal relationship between [Maven Central](https://search.maven.org) and [MVN-Repository](https://mvnrepository.com), there is no know how for frequency or accuracy of their updates. (I will update this after [MVN-Repository](https://mvnrepository.com) respond in the next century)
 
 ### General setup
 ##### Project requirements
