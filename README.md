@@ -4,9 +4,15 @@
 [![Version][Version-image]][Version-Url]
 [![Build][Build-Status-Image]][Build-Status-Url] 
 
+[![License][License-Image]][License-Url]
+[![Build][Build-Status-Image]][Build-Status-Url]  
+[![Central][Central-image]][Central-Url] 
+[![Javadoc][javadoc-image]][javadoc-Url]
+[![Gitter][Gitter-image]][Gitter-Url] 
+
 ### Description
 Maven oss parent pom helps open source projects to deploy and release Maven repositories to maven central (https://central.sonatype.org)
-Since the official support is from   [oss-parent](https://central.sonatype.org/pages/apache-maven.html#deprecated-oss-parent) is deprecated.
+Since the official support is from [oss-parent](https://central.sonatype.org/pages/apache-maven.html#deprecated-oss-parent) is deprecated.
 This pom creates a release profile which will:
 * compile (optional - default=on)
 * find duplicate imports (optional - default=on)
@@ -18,6 +24,10 @@ This pom creates a release profile which will:
 * upload to sonatype nexus
 * deploy to sonatype nexus
 * release to sonatype nexus
+
+### Attention
+You should read [Maven Central Terms](http://repo1.maven.org/terms.html) before using this repository and deploy anything.
+You wont be able to rename or delete any pushed repository.
 
 ### Usage
 * Call `mvn clean deploy -P release` after setup the parent to deploy and release your project to maven central
@@ -64,7 +74,7 @@ This pom creates a release profile which will:
 </settings>
 ```
 
-##### POM requirements [Example pom](https://github.com/YunaBraska/nats-streaming-server-embedded/blob/master/pom.xml)
+##### POM requirements [Example pom](https://github.com/YunaBraska/maven-oss-parent/blob/master/pom.xml)
 * POM setup parent
 ```xml
  <parent>
@@ -123,5 +133,15 @@ This pom creates a release profile which will:
 [github-release]: https://github.com/YunaBraska/maven-oss-parent
 [Build-Status-Url]: https://travis-ci.org/YunaBraska/maven-oss-parent
 [Build-Status-Image]: https://travis-ci.org/YunaBraska/maven-oss-parent.svg?branch=master
+[Coverage-Url]: https://codecov.io/gh/YunaBraska/maven-oss-parent?branch=master
+[Coverage-image]: https://codecov.io/gh/YunaBraska/maven-oss-parent/branch/master/graphs/badge.svg
 [Version-url]: https://github.com/YunaBraska/maven-oss-parent
 [Version-image]: https://badge.fury.io/gh/YunaBraska%2Fmaven-oss-parent.svg
+[Central-url]: https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22maven-oss-parent%22
+[Central-image]: https://maven-badges.herokuapp.com/maven-central/berlin.yuna/maven-oss-parent/badge.svg
+[Maintainable-Url]: https://codeclimate.com/github/YunaBraska/maven-oss-parent
+[Maintainable-image]: https://codeclimate.com/github/YunaBraska/maven-oss-parent.svg
+[Gitter-Url]: https://gitter.im/nats-streaming-server-embedded/Lobby
+[Gitter-image]: https://img.shields.io/badge/gitter-join%20chat%20%E2%86%92-brightgreen.svg
+[Javadoc-url]: http://javadoc.io/doc/berlin.yuna/maven-oss-parent
+[Javadoc-image]: http://javadoc.io/badge/berlin.yuna/maven-oss-parent.svg
