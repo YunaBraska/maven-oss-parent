@@ -6,12 +6,12 @@
 
     <groupId>berlin.yuna</groupId>
     <artifactId>maven-oss-parent</artifactId>
-    <version>0.0.1</version>
+    <version>0.1.0</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
     <description>Maven oss parent pom helps open source projects to deploy and release Maven repositories to maven central (https://central.sonatype.org)</description>
-    <url>${git-project.url}</url>
+    <url>${git-parent-project.url}</url>
 
     <developers>
         <developer>
@@ -29,10 +29,10 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <git-project.url>https://github.com/YunaBraska/maven-oss-parent</git-project.url>
+        <parent-project.encoding>UTF-8</parent-project.encoding>
+        <project.build.sourceEncoding>${parent-project.encoding}</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>${parent-project.encoding}</project.reporting.outputEncoding>
+        <git-parent-project.url>https://github.com/YunaBraska/maven-oss-parent</git-parent-project.url>
     </properties>
 
     <build>
@@ -224,8 +224,8 @@
     </profiles>
 
     <scm>
-        <connection>scm:git:${git-project.url}</connection>
-        <developerConnection>scm:git:${git-project.url}</developerConnection>
-        <url>${git-project.url}.git</url>
+        <connection>scm:git:${git-parent-project.url}</connection>
+        <developerConnection>scm:git:${git-parent-project.url}</developerConnection>
+        <url>${git-parent-project.url}.git</url>
     </scm>
 </project>
