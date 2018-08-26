@@ -7,12 +7,12 @@
     <parent>
         <groupId>berlin.yuna</groupId>
         <artifactId>maven-parent</artifactId>
-        <version>0.0.1</version>
+        <version>0.0.3</version>
     </parent>
 
     <groupId>berlin.yuna</groupId>
     <artifactId>maven-oss-parent</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
@@ -91,6 +91,14 @@
             </distributionManagement>
         </profile>
     </profiles>
+
+    <repositories>
+        <repository>
+            <id>berlin.yuna</id>
+            <name>berlin.yuna</name>
+            <url>https://artifactory.yuna.berlin:443/libs-release-local</url>
+        </repository>
+    </repositories>
 
     <scm>
         <connection>scm:git:${git-parent-project.url}</connection>
