@@ -66,6 +66,10 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-scm-plugin</artifactId>
+                        <configuration>
+                            <pushChanges>true</pushChanges>
+                            <tag>${project.version}</tag>
+                        </configuration>
                     </plugin>
                     <plugin>
                         <groupId>org.sonatype.plugins</groupId>
