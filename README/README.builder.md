@@ -1,43 +1,9 @@
-# maven-oss-parent NOT MAINTAINED ANYMORE
+[var target]: # (/)
+
+# !{project.name} NOT MAINTAINED ANYMORE
 *Know how to upload to maven central* 
 
-[![Build][build_shield]][build_link]
-[![Maintainable][maintainable_shield]][maintainable_link]
-[![Coverage][coverage_shield]][coverage_link]
-[![Issues][issues_shield]][issues_link]
-[![Commit][commit_shield]][commit_link]
-[![Dependencies][dependency_shield]][dependency_link]
-[![License][license_shield]][license_link]
-[![Central][central_shield]][central_link]
-[![Tag][tag_shield]][tag_link]
-[![Javadoc][javadoc_shield]][javadoc_link]
-[![Size][size_shield]][size_shield]
-![Label][label_shield]
-
-[build_shield]: https://img.shields.io/travis/YunaBraska/maven-oss-parent/master?style=flat-square
-[build_link]: https://travis-ci.org/YunaBraska/maven-oss-parent
-[maintainable_shield]: https://img.shields.io/codeclimate/maintainability/YunaBraska/maven-oss-parent?style=flat-square
-[maintainable_link]: https://codeclimate.com/github/YunaBraska/maven-oss-parent/maintainability
-[coverage_shield]: https://img.shields.io/codecov/c/github/YunaBraska/maven-oss-parent?style=flat-square
-[coverage_link]: https://codecov.io/gh/YunaBraska/maven-oss-parent?branch=master
-[issues_shield]: https://img.shields.io/github/issues/YunaBraska/maven-oss-parent?style=flat-square
-[issues_link]: https://github.com/YunaBraska/maven-oss-parent/commits/master
-[commit_shield]: https://img.shields.io/github/last-commit/YunaBraska/maven-oss-parent?style=flat-square
-[commit_link]: https://github.com/YunaBraska/maven-oss-parent/issues
-[license_shield]: https://img.shields.io/github/license/YunaBraska/maven-oss-parent?style=flat-square
-[license_link]: https://github.com/YunaBraska/maven-oss-parent/blob/master/LICENSE
-[dependency_shield]: https://img.shields.io/librariesio/github/YunaBraska/maven-oss-parent?style=flat-square
-[dependency_link]: https://libraries.io/github/YunaBraska/maven-oss-parent
-[central_shield]: https://img.shields.io/maven-central/v/berlin.yuna/maven-oss-parent?style=flat-square
-[central_link]:https://search.maven.org/artifact/berlin.yuna/maven-oss-parent
-[tag_shield]: https://img.shields.io/github/v/tag/YunaBraska/maven-oss-parent?style=flat-square
-[tag_link]: https://github.com/YunaBraska/maven-oss-parent/releases
-[javadoc_shield]: https://javadoc.io/badge2/berlin.yuna/maven-oss-parent/javadoc.svg?style=flat-square
-[javadoc_link]: https://javadoc.io/doc/berlin.yuna/maven-oss-parent
-[size_shield]: https://img.shields.io/github/repo-size/YunaBraska/maven-oss-parent?style=flat-square
-[label_shield]: https://img.shields.io/badge/Yuna-QueenInside-blueviolet?style=flat-square
-[gitter_shield]: https://img.shields.io/gitter/room/YunaBraska/nats-streaming-server-embedded?style=flat-square
-[gitter_link]: https://gitter.im/nats-streaming-server-embedded/Lobby
+[include]: # (/README/shields.include.md)
 
 ### Description
 Maven oss parent pom helps open source projects to deploy and release Maven repositories to maven central (https://central.sonatype.org)

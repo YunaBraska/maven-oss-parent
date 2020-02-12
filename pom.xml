@@ -4,15 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>berlin.yuna</groupId>
-        <artifactId>maven-parent</artifactId>
-        <version>0.0.3</version>
-    </parent>
+<!--    <parent>-->
+<!--        <groupId>berlin.yuna</groupId>-->
+<!--        <artifactId>maven-parent</artifactId>-->
+<!--        <version>0.0.3</version>-->
+<!--    </parent>-->
 
     <groupId>berlin.yuna</groupId>
     <artifactId>maven-oss-parent</artifactId>
-    <version>0.2.0</version>
+    <version>0.2.1</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
@@ -43,6 +43,29 @@
 
     <!-- MAVEN CENTRAL USAGE -->
     <profiles>
+        <profile>
+            <id>build</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>berlin.yuna</groupId>
+                        <artifactId>deployment-maven-plugin</artifactId>
+                        <version>12.0.5</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <phase>compile</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
         <profile>
             <!-- mvn clean deploy -P release -->
             <id>release</id>
