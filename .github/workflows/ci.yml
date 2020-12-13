@@ -32,11 +32,11 @@ jobs:
 #          verbose: false
 #      - name: Publish code quality
 #        uses: paambaati/codeclimate-action@v2.7.4
-        env:
-          CC_TEST_REPORTER_ID: ${{secrets.CC_TEST_REPORTER_ID}}
-          JACOCO_SOURCE_PATH: "${{github.workspace}}/src/main/java"
-        with:
-          coverageLocations: ${{github.workspace}}/target/site/jacoco/jacoco.xml:jacoco
+#        env:
+#          CC_TEST_REPORTER_ID: ${{secrets.CC_TEST_REPORTER_ID}}
+#          JACOCO_SOURCE_PATH: "${{github.workspace}}/src/main/java"
+#        with:
+#          coverageLocations: ${{github.workspace}}/target/site/jacoco/jacoco.xml:jacoco
       - name: Tag and Push
         run: .github/scripts/push_changes.sh "https://x-access-token:${{ secrets.CI_TOKEN }}@github.com/${{ github.repository }}"
       #END_TEMPLATE UPDATE_AND_TEST
