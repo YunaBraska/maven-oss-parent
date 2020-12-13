@@ -14,31 +14,6 @@
 [![Size][size_shield]][size_shield]
 ![Label][label_shield]
 
-[build_shield]: https://img.shields.io/travis/YunaBraska/maven-oss-parent/master?style=flat-square
-[build_link]: https://travis-ci.org/YunaBraska/maven-oss-parent
-[maintainable_shield]: https://img.shields.io/codeclimate/maintainability/YunaBraska/maven-oss-parent?style=flat-square
-[maintainable_link]: https://codeclimate.com/github/YunaBraska/maven-oss-parent/maintainability
-[coverage_shield]: https://img.shields.io/codecov/c/github/YunaBraska/maven-oss-parent?style=flat-square
-[coverage_link]: https://codecov.io/gh/YunaBraska/maven-oss-parent?branch=master
-[issues_shield]: https://img.shields.io/github/issues/YunaBraska/maven-oss-parent?style=flat-square
-[issues_link]: https://github.com/YunaBraska/maven-oss-parent/commits/master
-[commit_shield]: https://img.shields.io/github/last-commit/YunaBraska/maven-oss-parent?style=flat-square
-[commit_link]: https://github.com/YunaBraska/maven-oss-parent/issues
-[license_shield]: https://img.shields.io/github/license/YunaBraska/maven-oss-parent?style=flat-square
-[license_link]: https://github.com/YunaBraska/maven-oss-parent/blob/master/LICENSE
-[dependency_shield]: https://img.shields.io/librariesio/github/YunaBraska/maven-oss-parent?style=flat-square
-[dependency_link]: https://libraries.io/github/YunaBraska/maven-oss-parent
-[central_shield]: https://img.shields.io/maven-central/v/berlin.yuna/maven-oss-parent?style=flat-square
-[central_link]:https://search.maven.org/artifact/berlin.yuna/maven-oss-parent
-[tag_shield]: https://img.shields.io/github/v/tag/YunaBraska/maven-oss-parent?style=flat-square
-[tag_link]: https://github.com/YunaBraska/maven-oss-parent/releases
-[javadoc_shield]: https://javadoc.io/badge2/berlin.yuna/maven-oss-parent/javadoc.svg?style=flat-square
-[javadoc_link]: https://javadoc.io/doc/berlin.yuna/maven-oss-parent
-[size_shield]: https://img.shields.io/github/repo-size/YunaBraska/maven-oss-parent?style=flat-square
-[label_shield]: https://img.shields.io/badge/Yuna-QueenInside-blueviolet?style=flat-square
-[gitter_shield]: https://img.shields.io/gitter/room/YunaBraska/nats-streaming-server-embedded?style=flat-square
-[gitter_link]: https://gitter.im/nats-streaming-server-embedded/Lobby
-
 ### Description
 Maven oss parent pom helps open source projects to deploy and release Maven repositories to maven central (https://central.sonatype.org)
 Since the official support is from [oss-parent](https://central.sonatype.org/pages/apache-maven.html#deprecated-oss-parent) is deprecated.
@@ -151,3 +126,29 @@ You wont be able to rename or delete any pushed repository.
         <url>https://github.com/YunaBraska/maven-oss-parent.git</url>
     </scm>
 ```
+
+
+[build_shield]: https://github.com/YunaBraska/maven-oss-parent/workflows/JAVA_CI/badge.svg
+[build_link]: https://github.com/YunaBraska/maven-oss-parent/actions?query=workflow%3AJAVA_CI
+[maintainable_shield]: https://img.shields.io/codeclimate/maintainability/YunaBraska/maven-oss-parent?style=flat-square
+[maintainable_link]: https://codeclimate.com/github/YunaBraska/maven-oss-parent/maintainability
+[coverage_shield]: https://img.shields.io/codeclimate/coverage/YunaBraska/maven-oss-parent?style=flat-square
+[coverage_link]: https://codeclimate.com/github/YunaBraska/maven-oss-parent/test_coverage
+[issues_shield]: https://img.shields.io/github/issues/YunaBraska/maven-oss-parent?style=flat-square
+[issues_link]: https://github.com/YunaBraska/maven-oss-parent/commits/master
+[commit_shield]: https://img.shields.io/github/last-commit/YunaBraska/maven-oss-parent?style=flat-square
+[commit_link]: https://github.com/YunaBraska/maven-oss-parent/issues
+[license_shield]: https://img.shields.io/github/license/YunaBraska/maven-oss-parent?style=flat-square
+[license_link]: https://github.com/YunaBraska/maven-oss-parent/blob/master/LICENSE
+[dependency_shield]: https://img.shields.io/librariesio/github/YunaBraska/maven-oss-parent?style=flat-square
+[dependency_link]: https://libraries.io/github/YunaBraska/maven-oss-parent
+[central_shield]: https://img.shields.io/maven-central/v/berlin.yuna/maven-oss-parent?style=flat-square
+[central_link]:https://search.maven.org/artifact/berlin.yuna/maven-oss-parent
+[tag_shield]: https://img.shields.io/github/v/tag/YunaBraska/maven-oss-parent?style=flat-square
+[tag_link]: https://github.com/YunaBraska/maven-oss-parent/releases
+[javadoc_shield]: https://javadoc.io/badge2/berlin.yuna/maven-oss-parent/javadoc.svg?style=flat-square
+[javadoc_link]: https://javadoc.io/doc/berlin.yuna/maven-oss-parent
+[size_shield]: https://img.shields.io/github/repo-size/YunaBraska/maven-oss-parent?style=flat-square
+[label_shield]: https://img.shields.io/badge/Yuna-QueenInside-blueviolet?style=flat-square
+[gitter_shield]: https://img.shields.io/gitter/room/YunaBraska/nats-streaming-server-embedded?style=flat-square
+[gitter_link]: https://gitter.im/nats-streaming-server-embedded/Lobby*__*

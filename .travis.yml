@@ -1,5 +1,0 @@
-language: java
-jdk:
-  - openjdk12
-sudo: false
-script: sh scripts/test.sh
