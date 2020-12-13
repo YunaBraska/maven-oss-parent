@@ -6,7 +6,19 @@
 
     <groupId>berlin.yuna</groupId>
     <artifactId>maven-oss-parent</artifactId>
-    <version>0.3.0</version>
+    <version>0.3.1</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <packaging>pom</packaging>
 
     <name>maven-oss-parent</name>
@@ -39,6 +51,8 @@
         <project.encoding>UTF-8</project.encoding>
         <project.build.sourceEncoding>${project.encoding}</project.build.sourceEncoding>
         <project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
+        <hamcrest-core.version>2.2</hamcrest-core.version>
+        <junit-jupiter.version>5.7.0</junit-jupiter.version>
         <!-- VERSIONS BUILD -->
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <maven-scm-plugin.version>1.11.2</maven-scm-plugin.version>
@@ -46,6 +60,21 @@
         <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
         <deployment-maven-plugin.version>12.0.5</deployment-maven-plugin.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <version>${hamcrest-core.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <!-- MAVEN CENTRAL USAGE -->
     <profiles>
